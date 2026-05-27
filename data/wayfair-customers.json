@@ -1,0 +1,19 @@
+[
+  {
+    "phone_e164": "+16175550142",
+    "phone_display": "(617) 555-0142",
+    "first_name": "Hansen",
+    "last_name": "Liang",
+    "email": "thehansenliang@gmail.com",
+    "address": {
+      "street": "417 Cambridge St",
+      "unit": "Apt 3R",
+      "city": "Allston",
+      "state": "MA",
+      "zip": "02134"
+    },
+    "loyalty_tier": "Wayfair Plus",
+    "member_since": "2021-08-15",
+    "order_ids": ["WF-100482", "WF-099217", "WF-101355"]
+  }
+]

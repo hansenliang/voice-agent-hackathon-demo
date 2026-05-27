@@ -1,0 +1,183 @@
+[
+  {
+    "order_id": "WF-099217",
+    "customer_email": "thehansenliang@gmail.com",
+    "placed_at": "2026-04-24T16:42:00-04:00",
+    "status": "delivered",
+    "status_detail": "Delivered to front door at 417 Cambridge St, Allston MA. Signature was not required.",
+    "items": [
+      {
+        "product_id": "wf-004",
+        "qty": 1,
+        "color": "walnut",
+        "unit_price_usd": 549,
+        "line_total_usd": 549
+      },
+      {
+        "product_id": "wf-005",
+        "qty": 1,
+        "color": "charcoal",
+        "unit_price_usd": 329,
+        "line_total_usd": 329
+      }
+    ],
+    "subtotal_usd": 878,
+    "tax_usd": 54.88,
+    "shipping_fee_usd": 0,
+    "total_usd": 932.88,
+    "payment_method": "Visa ending in 4242",
+    "ship_to": {
+      "name": "Hansen Liang",
+      "street": "417 Cambridge St",
+      "unit": "Apt 3R",
+      "city": "Allston",
+      "state": "MA",
+      "zip": "02134"
+    },
+    "carrier": "UPS",
+    "tracking_number": "1ZW8F4920399481027",
+    "tracking_url": "https://www.wayfair.com/orders/track/1ZW8F4920399481027",
+    "shipped_on": "2026-04-26",
+    "delivered_on": "2026-04-30",
+    "estimated_delivery": "2026-04-30",
+    "return_eligible": true,
+    "return_window_ends_on": "2026-05-30",
+    "return_policy_note": "Standard 30-day return window from delivery. Free prepaid return label provided (order qualifies — total over $35). Items must be unused and in original packaging.",
+    "cancellation": {
+      "allowed": false,
+      "deadline": null,
+      "note": "Order has been delivered. To return, start a return request — free label provided."
+    },
+    "address_change": {
+      "allowed": false,
+      "fee_usd": null,
+      "note": "Order is delivered. No address changes possible."
+    },
+    "gift_options": {
+      "is_gift": false
+    },
+    "notes": null
+  },
+  {
+    "order_id": "WF-100482",
+    "customer_email": "thehansenliang@gmail.com",
+    "placed_at": "2026-05-24T11:18:00-04:00",
+    "status": "in_transit",
+    "status_detail": "Picked up by FedEx in Allentown, PA on May 25. Last scan today at 6:42 AM showed it in transit to the Boston Distribution Center.",
+    "items": [
+      {
+        "product_id": "wf-001",
+        "qty": 1,
+        "color": "charcoal",
+        "unit_price_usd": 1399,
+        "line_total_usd": 1399
+      }
+    ],
+    "subtotal_usd": 1399,
+    "tax_usd": 87.44,
+    "shipping_fee_usd": 0,
+    "total_usd": 1486.44,
+    "payment_method": "Visa ending in 4242",
+    "ship_to": {
+      "name": "Hansen Liang",
+      "street": "417 Cambridge St",
+      "unit": "Apt 3R",
+      "city": "Allston",
+      "state": "MA",
+      "zip": "02134"
+    },
+    "carrier": "FedEx",
+    "tracking_number": "1Z999AA10123456784",
+    "tracking_url": "https://www.fedex.com/fedextrack/?trknbr=1Z999AA10123456784",
+    "shipped_on": "2026-05-25",
+    "delivered_on": null,
+    "estimated_delivery": "2026-05-30",
+    "delivery_window_text": "Saturday May 30, between 9 AM and 2 PM",
+    "return_eligible": false,
+    "return_window_ends_on": null,
+    "return_policy_note": "30-day return window begins once delivered. Sectionals over $400 qualify for free return pickup.",
+    "cancellation": {
+      "allowed": false,
+      "deadline": null,
+      "note": "Already shipped — cancellation isn't possible at this stage. Once delivered, a free return can be started in the app or by calling support."
+    },
+    "address_change": {
+      "allowed": true,
+      "fee_usd": 12,
+      "note": "FedEx Rerouter is available for $12. New address must be within 25 miles of the original ZIP (02134) and within the same metro region."
+    },
+    "gift_options": {
+      "is_gift": false
+    },
+    "signature_required": false,
+    "signature_note": "No signature required. Driver does curbside drop, but FedEx will leave it secured by the building entrance even if no one is home.",
+    "notes": "Curbside delivery only — driver does not bring large furniture inside the building. Customer should plan to receive at street level. No signature required at delivery."
+  },
+  {
+    "order_id": "WF-101355",
+    "customer_email": "thehansenliang@gmail.com",
+    "placed_at": "2026-05-26T09:15:00-04:00",
+    "status": "processing",
+    "status_detail": "Order received this morning. Currently being prepared in the Cranbury, NJ warehouse. Estimated to ship in 1 to 2 business days.",
+    "items": [
+      {
+        "product_id": "wf-006",
+        "qty": 2,
+        "color": "charcoal",
+        "unit_price_usd": 189,
+        "line_total_usd": 378
+      },
+      {
+        "product_id": "wf-008",
+        "qty": 1,
+        "color": "brass",
+        "unit_price_usd": 649,
+        "line_total_usd": 649
+      }
+    ],
+    "subtotal_usd": 1027,
+    "tax_usd": 64.19,
+    "shipping_fee_usd": 0,
+    "total_usd": 1066.19,
+    "promo_applied": {
+      "code": "WAYFAIRPLUS25",
+      "discount_usd": 25,
+      "description": "Wayfair Plus member discount"
+    },
+    "payment_method": "Visa ending in 4242",
+    "ship_to": {
+      "name": "Priya Shah",
+      "street": "245 W 14th St",
+      "unit": "Apt 6B",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10003"
+    },
+    "carrier": null,
+    "tracking_number": null,
+    "tracking_url": null,
+    "shipped_on": null,
+    "delivered_on": null,
+    "estimated_delivery": "2026-06-02",
+    "delivery_window_text": "Tuesday June 2, between 10 AM and 4 PM",
+    "return_eligible": null,
+    "return_window_ends_on": null,
+    "return_policy_note": "Standard 30-day return window will begin on delivery.",
+    "cancellation": {
+      "allowed": true,
+      "deadline": "2026-05-26T17:00:00-04:00",
+      "note": "Free cancellation while order is in 'preparing' status. Cancel by 5 PM ET today and you'll be fully refunded — no questions. After 5 PM the order moves to fulfillment and cancellation becomes a return."
+    },
+    "address_change": {
+      "allowed": true,
+      "fee_usd": 0,
+      "note": "Free address change available until the order ships. Any U.S. address is fine — no distance limit while pre-ship."
+    },
+    "gift_options": {
+      "is_gift": true,
+      "gift_message": "Welcome to the new place! — Hansen",
+      "gift_receipt_included": true
+    },
+    "notes": "Gift order — recipient (Priya Shah) does not see the price on the packing slip."
+  }
+]

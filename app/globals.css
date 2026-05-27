@@ -18,3 +18,142 @@ body {
   color: #f5f5f5;
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+/* Voice orb — pulses with audio level via --level CSS var driven by JS RAF. */
+.voice-orb {
+  --c1: rgb(255 140 70);
+  --c2: rgb(255 92 40);
+  --level: 0;
+  position: relative;
+  width: 112px;
+  height: 112px;
+  border-radius: 9999px;
+  background: radial-gradient(
+    circle at 30% 30%,
+    var(--c1),
+    var(--c2) 55%,
+    transparent 75%
+  );
+  transform: scale(calc(1 + var(--level) * 0.45));
+  transition:
+    transform 90ms ease-out,
+    background 450ms ease,
+    box-shadow 220ms ease;
+  box-shadow:
+    0 0 calc(60px + var(--level) * 90px) var(--c2),
+    0 0 calc(20px + var(--level) * 50px) var(--c1);
+  animation: orb-breathe 4.2s ease-in-out infinite;
+}
+
+.voice-orb::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 9999px;
+  border: 1px solid var(--c2);
+  opacity: calc(0.15 + var(--level) * 0.6);
+  transform: scale(calc(1.15 + var(--level) * 0.4));
+  transition: transform 120ms ease-out, opacity 120ms ease-out;
+  pointer-events: none;
+}
+
+.voice-orb::after {
+  content: "";
+  position: absolute;
+  inset: 18%;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgb(255 255 255 / 0.45), transparent 60%);
+  mix-blend-mode: screen;
+  opacity: calc(0.4 + var(--level) * 0.5);
+  pointer-events: none;
+}
+
+@keyframes orb-breathe {
+  0%,
+  100% {
+    filter: brightness(0.95);
+  }
+  50% {
+    filter: brightness(1.18);
+  }
+}
+
+/* Idle call button — gentle ping ring inviting tap. */
+.start-call-button {
+  position: relative;
+}
+.start-call-button::before,
+.start-call-button::after {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  border-radius: 9999px;
+  border: 2px solid rgb(255 92 40 / 0.55);
+  animation: start-ping 2.6s cubic-bezier(0, 0, 0.2, 1) infinite;
+  pointer-events: none;
+}
+.start-call-button::after {
+  animation-delay: 1.3s;
+}
+
+@keyframes start-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.75;
+  }
+  80%,
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+
+/* Subconscious tool chip shimmer while running. */
+.tool-chip-running {
+  background-image: linear-gradient(
+    100deg,
+    transparent 35%,
+    rgb(255 92 40 / 0.10) 50%,
+    transparent 65%
+  );
+  background-size: 200% 100%;
+  animation: chip-shimmer 1.8s linear infinite;
+}
+
+@keyframes chip-shimmer {
+  0% {
+    background-position: 180% 0;
+  }
+  100% {
+    background-position: -80% 0;
+  }
+}
+
+/* Ambient background blobs for the voice page. */
+.voice-bg {
+  background-color: #050505;
+}
+.voice-bg::before,
+.voice-bg::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+  border-radius: 9999px;
+  filter: blur(80px);
+  z-index: 0;
+}
+.voice-bg::before {
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 720px;
+  height: 520px;
+  background: radial-gradient(circle, rgb(255 92 40 / 0.14), transparent 70%);
+}
+.voice-bg::after {
+  bottom: -200px;
+  right: -120px;
+  width: 540px;
+  height: 540px;
+  background: radial-gradient(circle, rgb(56 189 248 / 0.08), transparent 70%);
+}
